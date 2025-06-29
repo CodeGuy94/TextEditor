@@ -14,12 +14,16 @@
         </Grid.ColumnDefinitions>
         <Menu Grid.ColumnSpan="2">
             <MenuItem Header="File">
-                <MenuItem Header="Openfile"/>
-                <MenuItem Header="Save"/>
-                <MenuItem Header="Exit"/>
+                <MenuItem Click="Open_Click" Header="Openfile"/>
+                <MenuItem Click="Save_Click" Header="Save"/>
+                <MenuItem Click="Exit_Click" Header="Exit"/>
 
             </MenuItem>
-            <MenuItem Header=""
+            <MenuItem Header="Edit">
+                <MenuItem Name="Undo_" Click="Undo_Click" Header="Undo"/>
+                <MenuItem Name="Redo_" Click="Redo_Click" Header="Redo"/>
+                <MenuItem Name="Search" Click="Search_Click" Header="Find"/>
+            </MenuItem>
 
         </Menu>
 
