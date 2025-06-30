@@ -4,17 +4,24 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:practice.Stuff.Controls"
+             xmlns:MainWindow="clr-namespace:practice"
              mc:Ignorable="d" 
-             d:DesignHeight="200" d:DesignWidth="800">
+             Height="70" d:DesignWidth="800">
     <Grid>
         <Menu>
-            <MenuItem Header="File">
-                <MenuItem Header="Openfile"/>
-                <MenuItem Header="Save"/>
-                    <MenuItem Header="Exit"/>
+            <MenuItem Header="File" Click="MenuItem_Click_1">
+                <MenuItem Click="OpenFile_Click" Header="Openfile"/>
+                <MenuItem  Click="Save_Click" Header="Save"/>
+                <MenuItem  Click="Exit_Click" Header="Exit"/>
 
-                    </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Click="Undo_Click" Name="Undo_"  Header="Undo"/>
+                <MenuItem Click="Redo_Click" Name="Redo_"  Header="Redo"/>
+                <MenuItem Click="Search_Click" Name="Search"  Header="Find"/>
+            </MenuItem>
 
         </Menu>
+
     </Grid>
 </UserControl>

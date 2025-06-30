@@ -4,28 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:practice"
-         xmlns:MenuBar="clr-namespace:practice.Stuff.Controls"
+        xmlns:MenuBar="clr-namespace:practice.Stuff.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Menu Grid.ColumnSpan="2">
-            <MenuItem Header="File">
-                <MenuItem Click="Open_Click" Header="Openfile"/>
-                <MenuItem Click="Save_Click" Header="Save"/>
-                <MenuItem Click="Exit_Click" Header="Exit"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <MenuBar:MenuBar Loaded="MenuBar_Loaded" />
 
-            </MenuItem>
-            <MenuItem Header="Edit">
-                <MenuItem Name="Undo_" Click="Undo_Click" Header="Undo"/>
-                <MenuItem Name="Redo_" Click="Redo_Click" Header="Redo"/>
-                <MenuItem Name="Search" Click="Search_Click" Header="Find"/>
-            </MenuItem>
-
-        </Menu>
 
 
     </Grid>
