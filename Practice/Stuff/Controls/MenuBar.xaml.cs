@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Threading.Channels;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace practice.Stuff.Controls
@@ -45,7 +46,7 @@ namespace practice.Stuff.Controls
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
          private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {

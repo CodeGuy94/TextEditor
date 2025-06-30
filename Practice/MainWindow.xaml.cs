@@ -12,8 +12,6 @@ namespace practice
             InitializeComponent();
         }
 
-        
-
 
 
         private void MenuBar_Loaded(object sender, RoutedEventArgs e)
