@@ -15,7 +15,7 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
         <MenuBar:MenuBar Loaded="MenuBar_Loaded" />
-        <TextBox Name="TxtBox" Grid.Row="1">
+        <TextBox Text="{Binding Txt}" Background="DarkGray" FontWeight="Light" Name="TxtBox" Grid.Row="1">
             
         </TextBox>
 
